@@ -1,0 +1,9 @@
+
+<ion-card *ngFor="let NewsThumb of NTProvider.NewsThumbArray" color='tertiary'>
+  <ion-card-content>
+    <ion-img src='http://placehold.it/120x120&text=image1' (click)="onGoToArticlePage(currentPost)">
+    </ion-img>
+    <ion-card-subtitle>by {{NewsThumb.author}}</ion-card-subtitle>
+    {{NewsThumb.content}}
+</ion-card-content>
+  </ion-card>
